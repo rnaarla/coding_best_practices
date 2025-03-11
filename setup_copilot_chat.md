@@ -20,10 +20,6 @@ Always refer to CODE_ANALYZER.md before generating or modifying code. Apply its 
 
 ---
 
-4. **Copilot will now consider `CODE_ANALYZER.md` for all responses.**  
-
----
-
 ## **✅ Step 2: Configure Copilot Snippets in `settings.json`**
 1. Open **VS Code**.  
 2. Press `Ctrl + Shift + P`, search for **"Preferences: Open Settings (JSON)"**, and open it.  
