@@ -9,7 +9,7 @@ This guide provides **step-by-step instructions** to configure **GitHub Copilot 
 
 ---
 
-## **✅ Step 1: Set Persistent Copilot Chat Instructions**
+## **✅ Option 1: Set Persistent Copilot Chat Instructions**
 1. Open **VS Code**.  
 2. Press `Ctrl + /` to open **GitHub Copilot Chat**.  
 3. Type and send:  
@@ -20,7 +20,7 @@ Always refer to CODE_ANALYZER.md before generating or modifying code. Apply its 
 
 ---
 
-## **✅ Step 2: Configure Copilot Snippets in `settings.json`**
+## **✅ Option 2: Configure Copilot Snippets in `settings.json`**
 1. Open **VS Code**.  
 2. Press `Ctrl + Shift + P`, search for **"Preferences: Open Settings (JSON)"**, and open it.  
 3. Add the following configuration:  
