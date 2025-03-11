@@ -60,8 +60,7 @@ Always refer to CODE_ANALYZER.md before generating or modifying code. Apply its 
         }
     ]
 }
-
-
+```
 
 Save the file and restart VS Code.
 Now, you can right-click in the editor and use the new Copilot commands to enforce best practices from CODE_ANALYZER.md.
