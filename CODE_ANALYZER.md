@@ -1,14 +1,26 @@
 # 🚀 CODE_ANALYZER.md: Comprehensive Code Analysis & Optimization Guide
 
 ## 📌 Overview
-This document provides a structured framework for **code analysis, optimization, and 
-best practices**, ensuring that code is **scalable, efficient, maintainable, and 
-secure**. It follows **FAANG-level software engineering principles** and supports 
-**high-performance, web-scale applications**.
+
+This document provides a structured framework for **code analysis, optimization, and algorithm selection**, ensuring that code is **scalable, efficient, maintainable, and secure**. It follows **FAANG-level software engineering principles** and supports **high-performance, web-scale applications**.
 
 ---
 
+## 📋 Table of Contents
+
+1. [Object-Oriented Programming (OOP) Principles](#-object-oriented-programming-oop-principles)
+2. [Advanced Design Patterns for Web-Scale Systems](#️-advanced-design-patterns-for-web-scale-systems)
+3. [Advanced Algorithms & Data Structures](#-advanced-algorithms--data-structures)
+4. [Algorithm Selection Guide by Domain](#-algorithm-selection-guide-by-domain)
+5. [Optimizing Time & Space Complexity](#-optimizing-time--space-complexity)
+6. [Concurrency, Multi-threading and Parallelism](#-concurrency-multi-threading-and-parallelism)
+7. [Scalability & Web-Scale Engineering](#-scalability--web-scale-engineering)
+8. [Security Best Practices](#️-security-best-practices)
+9. [Software Engineering Best Practices](#-software-engineering-best-practices)
+10. [Using This Guide](#-using-this-guide-with-copilot)
+
 # 🛠 Object-Oriented Programming (OOP) Principles
+
 ## ✅ Code Analysis Checklist
 - [ ] **Encapsulation** – Ensure data hiding & controlled access.
 - [ ] **Inheritance** – Favor composition over inheritance to reduce coupling.
@@ -24,15 +36,16 @@ secure**. It follows **FAANG-level software engineering principles** and support
 ---
 
 # 🏛️ Advanced Design Patterns for Web-Scale Systems
+
 ## ✅ Code Analysis Checklist
 - **Creational Patterns:** Singleton, Factory Method, Abstract Factory, Builder, Prototype.
 - **Structural Patterns:** Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
-- **Behavioral Patterns:** Chain of Responsibility, Command, Interpreter, Iterator, Mediator, 
-Observer, State, Strategy, Template Method, Visitor.
+- **Behavioral Patterns:** Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Observer, State, Strategy, Template Method, Visitor.
 
 ---
 
 # 📊 Advanced Algorithms & Data Structures
+
 ## ✅ Code Analysis Checklist
 ### **Sorting & Searching Patterns**
 - **Binary Search** – Efficient searching in sorted arrays.
@@ -42,9 +55,9 @@ Observer, State, Strategy, Template Method, Visitor.
 ### **Graph & Tree Traversal Patterns**
 - **Depth-First Search (DFS)** – Recursive graph/tree traversal.
 - **Breadth-First Search (BFS)** – Level-wise traversal.
-- **Dijkstra’s Algorithm** – Shortest path in weighted graphs.
+- **Dijkstra's Algorithm** – Shortest path in weighted graphs.
 - **A* Algorithm** – Optimized pathfinding.
-- **Kruskal’s & Prim’s Algorithm** – Minimum spanning tree.
+- **Kruskal's & Prim's Algorithm** – Minimum spanning tree.
 
 ### **Optimization Patterns**
 - **Dynamic Programming (DP)** – Store overlapping subproblem results.
@@ -55,7 +68,129 @@ Observer, State, Strategy, Template Method, Visitor.
 
 ---
 
+# 🧩 Algorithm Selection Guide by Domain
+
+### Distributed Systems
+- **Raft**
+  - Use for: Distributed consensus, leader election, fault-tolerant systems.
+  - When: Building distributed databases, message queues or coordination services.
+- **Paxos Made Simple**
+  - Use for: Distributed consensus, fault-tolerant systems.
+  - When: Building distributed systems requiring strong consistency.
+- **ZooKeeper's Leader Election**
+  - Use for: Leader election, distributed coordination.
+  - When: Building distributed systems requiring coordination.
+- **Distributed Hash Table (DHT)**
+  - Use for: Decentralized data storage, peer-to-peer networks.
+  - When: Building distributed file systems or peer-to-peer networks.
+- **Consistent Hashing**
+  - Use for: Data distribution, load balancing.
+  - When: Building distributed caches, databases or load balancers.
+
+### Machine Learning
+- **Deep Learning**
+  - Use for: Image classification, natural language processing, speech recognition.
+  - When: Building AI-powered applications, predictive models.
+- **Gradient Boosting**
+  - Use for: Regression, classification, feature selection.
+  - When: Building predictive models, handling large datasets.
+- **XGBoost**
+  - Use for: Regression, classification, feature selection.
+  - When: Building high-performance predictive models.
+- **LightGBM**
+  - Use for: Regression, classification, feature selection.
+  - When: Building fast and efficient predictive models.
+- **BERT**
+  - Use for: Natural language processing, text classification.
+  - When: Building AI-powered chatbots, language translation systems.
+
+### Data Storage
+- **LSM-Tree**
+  - Use for: Key-value stores, databases.
+  - When: Building high-performance databases.
+- **B+ Tree**
+  - Use for: Databases, file systems.
+  - When: Building efficient databases, file systems.
+- **Fractal Tree**
+  - Use for: Databases, file systems.
+  - When: Building high-performance databases, file systems.
+- **SSTable**
+  - Use for: Key-value stores, databases.
+  - When: Building efficient databases.
+- **RocksDB**
+  - Use for: Embedded databases, key-value stores.
+  - When: Building high-performance embedded databases.
+
+### Networking
+- **QUIC**
+  - Use for: Web performance optimization, real-time communication.
+  - When: Building high-performance web applications.
+- **HTTP/2**
+  - Use for: Web performance optimization, multiplexing.
+  - When: Building high-performance web applications.
+- **TLS**
+  - Use for: Secure communication, encryption.
+  - When: Building secure web applications.
+- **DNS over HTTPS (DoH)**
+  - Use for: Secure DNS, privacy.
+  - When: Building secure web applications.
+- **WireGuard**
+  - Use for: Secure VPN, encryption.
+  - When: Building secure VPNs.
+
+### Optimization
+- **Stochastic Gradient Descent (SGD)**
+  - Use for: Optimization, machine learning.
+  - When: Building predictive models.
+- **Adam**
+  - Use for: Optimization, machine learning.
+  - When: Building high-performance predictive models.
+- **RMSProp**
+  - Use for: Optimization, machine learning.
+  - When: Building predictive models.
+- **Adagrad**
+  - Use for: Optimization, machine learning.
+  - When: Building predictive models.
+- **Proximal Gradient Method**
+  - Use for: Optimization, machine learning.
+  - When: Building predictive models.
+
+### Cryptography
+- **Homomorphic Encryption**
+  - Use for: Secure computation, data protection.
+  - When: Building secure data processing systems.
+- **Zero-Knowledge Proofs**
+  - Use for: Secure verification, authentication.
+  - When: Building secure authentication systems.
+- **Quantum-Resistant Cryptography**
+  - Use for: Post-quantum cryptography, secure communication.
+  - When: Building secure communication systems.
+- **Secure Multi-Party Computation**
+  - Use for: Secure collaboration, data sharing.
+  - When: Building secure data sharing systems.
+- **Verifiable Secret Sharing**
+  - Use for: Secure secret sharing, data protection.
+  - When: Building secure data protection systems.
+
+### Probabilistic Data Structures
+- **T-Digest**
+  - Use for: Streaming quantile estimation, data analysis.
+  - When: Building real-time data analysis systems.
+- **HyperLogLog**
+  - Use for: Cardinality estimation, data analysis.
+  - When: Building data analysis systems.
+- **Bloom Filter**
+  - Use for: Membership testing, data filtering.
+  - When: Building data filtering systems.
+- **Count-Min Sketch**
+  - Use for: Frequency estimation, data analysis.
+  - When: Building data analysis systems.
+- **Misra-Gries**
+  - Use for: Heavy hitter detection, data analysis.
+  - When: Building data analysis systems.
+
 # ⚡ Optimizing Time & Space Complexity
+
 ## ✅ Code Analysis Checklist
 - Reduce **O(n²) complexity** to **O(n log n)** using divide & conquer.
 - Convert **nested loops** into **hashmap-based lookups**.
@@ -63,7 +198,8 @@ Observer, State, Strategy, Template Method, Visitor.
 
 ---
 
-# 🔥 Concurrency, Multi-threading, and Parallelism
+# 🔥 Concurrency, Multi-threading and Parallelism
+
 ## ✅ Code Analysis Checklist
 ### **Multi-Threading & Parallel Programming**
 - **Thread Pools** – Efficiently manage multiple threads.
@@ -91,6 +227,7 @@ Observer, State, Strategy, Template Method, Visitor.
 ---
 
 # 📈 Scalability & Web-Scale Engineering
+
 ## ✅ Code Analysis Checklist
 - **Sharding & Replication** – Distribute data across multiple databases.
 - **Caching Strategies** – Implement LRU, LFU, Write-Through, and Write-Back caching.
@@ -102,6 +239,7 @@ Observer, State, Strategy, Template Method, Visitor.
 ---
 
 # 🛡️ Security Best Practices
+
 ## ✅ Code Analysis Checklist
 - **Zero Trust Security** – Assume no implicit trust.
 - **OAuth & JWT Authentication** – Secure API endpoints.
@@ -112,6 +250,7 @@ Observer, State, Strategy, Template Method, Visitor.
 ---
 
 # 🏆 Software Engineering Best Practices
+
 ## ✅ Principles
 - **Separation of Concerns (SoC)** – Modularize responsibilities.
 - **Single Responsibility Principle (SRP)** – Keep classes focused.
@@ -125,6 +264,17 @@ Observer, State, Strategy, Template Method, Visitor.
 
 ---
 
+# 💻 Using This Guide with Copilot
+
+To generate code using Copilot, simply provide the algorithm name and a brief description of your use case. For example:
+
+### Example Prompts
+- "Implement Raft consensus algorithm for distributed database"
+- "Use XGBoost for regression task with large dataset"
+- "Design a high-performance database using LSM-Tree"
+- "Optimize web application performance using QUIC"
+- "Implement homomorphic encryption for secure data processing"
+
 # 🚀 Conclusion
-This `CODE_ANALYZER.md` serves as a **gold-standard roadmap** for **building high-quality, 
-scalable, and efficient software**
+
+This `CODE_ANALYZER.md` serves as a **gold-standard roadmap** for **building high-quality, scalable, and efficient software**. By following these best practices and selecting the appropriate algorithms for specific use cases, software engineers can write efficient, scalable, and maintainable code that meets the high standards of FAANG companies.
