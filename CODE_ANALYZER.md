@@ -5,20 +5,6 @@
 This document provides a structured framework for **code analysis, optimization, and algorithm selection**, ensuring that code is **scalable, efficient, maintainable, and secure**. It follows **FAANG-level software engineering principles** and supports **high-performance, web-scale applications**.
 
 ---
-
-## 📋 Table of Contents
-
-1. [Object-Oriented Programming (OOP) Principles](#-object-oriented-programming-oop-principles)
-2. [Advanced Design Patterns for Web-Scale Systems](#️-advanced-design-patterns-for-web-scale-systems)
-3. [Advanced Algorithms & Data Structures](#-advanced-algorithms--data-structures)
-4. [Algorithm Selection Guide by Domain](#-algorithm-selection-guide-by-domain)
-5. [Optimizing Time & Space Complexity](#-optimizing-time--space-complexity)
-6. [Concurrency, Multi-threading and Parallelism](#-concurrency-multi-threading-and-parallelism)
-7. [Scalability & Web-Scale Engineering](#-scalability--web-scale-engineering)
-8. [Security Best Practices](#️-security-best-practices)
-9. [Software Engineering Best Practices](#-software-engineering-best-practices)
-10. [Using This Guide](#-using-this-guide-with-copilot)
-
 # 🛠 Object-Oriented Programming (OOP) Principles
 
 ## ✅ Code Analysis Checklist
